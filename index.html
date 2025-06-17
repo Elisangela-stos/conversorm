@@ -28,7 +28,7 @@
             <option valor="JPY">JPY - Ienne</option>
             <option valor="CAD">CAD - Dólar Canadense</option>
             <option valor="AUD">AUD - Dólar Australiano</option>
-            <option valor="CNF">CNF - Franco Suíço</option>
+            <option valor="CHF">CHF - Franco Suíço</option>
             <option valor="CNY">CNY - Yuan</option>
             <option valor="ARS">ARS - Peso Argentino</option>
 
@@ -38,7 +38,53 @@
     </div>
 </div>
 
+<div class="currency-row">
+
+    <div class="currency-input">
+       <label for="convertedAmount">Resultado</label>
+       <input type="text" readonly id="convertedAmount" placeholder="Valor convertido">
+    </div>
+
+    <div class="currency-select">
+        <label for="toCurrency">Para</label>
+        <select id="toCurrency" required>
+            <option valor="USD" selected>USD - Dólar</option>
+            <option valor="EUR">EUR - Euro</option>
+            <option valor="BRL">BRL - Real</option>
+            <option valor="GBP">GBP - Libra</option>
+            <option valor="JPY">JPY - Ienne</option>
+            <option valor="CAD">CAD - Dólar Canadense</option>
+            <option valor="AUD">AUD - Dólar Australiano</option>
+            <option valor="CHF">CHF - Franco Suíço</option>
+            <option valor="CNY">CNY - Yuan</option>
+            <option valor="ARS">ARS - Peso Argentino</option>
+
+        </select>
+
+
+    </div>
+</div>
+
+<button type="submit" class="converter-btn" id="converterBtn">
+    Converter Moeda
+</button>
+
         </form>
+
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Buscando cotação...</p>
+        </div>
+
+        <div class="result"></div>
+
+        <div class="erro"></div>
+
+        
+        <div class="info">
+            <p>Taxas atualizadas em tempo real</p>
+        </div>
+
     </div>
 </body>
 </html>
