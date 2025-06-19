@@ -7,7 +7,7 @@ const loading = document.querySelector(".loading")
 const result = document.querySelector("result")
 const error = document.querySelector("error")
 
-const API_URL = "https://v6.exchangerate-api.com/v6/latest/"
+const API_URL = "https://v6.exchangerate-api.com/v6/mais-recebida/ "
 
 
 async function converterMoney(){
